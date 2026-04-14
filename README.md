@@ -6,6 +6,12 @@ Collects kernel, driver, firmware, and hardware signals into a single compressed
 
 ---
 
+## Note on nvidia-bug-report
+
+NVIDIA support requires `nvidia-bug-report.log.gz` for assistance requests. This tool does not replace it — it captures additional signals not included in the bug report, such as EFI pstore crash records, rasdaemon BERT events, and rotated kernel logs. Run both.
+
+---
+
 ## Why this exists
 
 Provides a focused, single-command collection of:
@@ -90,6 +96,12 @@ sudo ./dgx-forensic-collect.sh
 `dgx-forensic-TIMESTAMP.txt.gz` — compressed and sanitized for sharing.
 
 Run `dgx-forensic-verify.sh` before sharing. Confirms sanitization and flags any missing sections. Produces a JSON integrity report with SHA256, NTP sync state, and hardware ID.
+
+---
+
+## License
+
+MIT License 
 
 ---
 
