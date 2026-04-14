@@ -1,0 +1,8 @@
+# Forensic output files — never commit these
+dgx-forensic-*.txt
+dgx-forensic-*.txt.gz
+dgx-forensic-verify-*.json
+
+# OS
+.DS_Store
+Thumbs.db
